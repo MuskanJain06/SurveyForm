@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Survey</title>
+    <script>
+        function myFunction(){
+        window.alert("Thankyou");}
+    </script>
+    <style>
+        .content {
+  max-width: 500px;
+  margin: auto;
+        }
+       
+        fieldset
+        {
+            width:fit-content;
+        }
+        .span1
+        {
+            color:red;
+        }
+        .checked 
+        {
+            color: orange;
+            width: 100;
+            height: 100;
+        }
+        .padd
+        {
+            padding-bottom:10px;
+        }
+        .lclas
+        {
+            font-size:large;
+            font-weight: bold;
+        }
+        th, td ,tr
+        {
+            padding: 15px;
+            padding-left: 5px;
+            font-weight: normal;
+            font-size: 15px;
+            border-spacing: 15px;
+        }
+        button
+        {
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+    <form>
+        <fieldset>
+        <label class="lclas">Name<span class="span1">*</span></label><br>
+        <input type="text" class = "padd">   <input type="text" class = "padd"><br>
+        <label style="word-spacing: 160px; font-size: 12px;">First Last</label><br><br>
+        <label class="lclas">Email<span class="span1">*</span></label><br>
+        <input type="text" size="46" class = "padd"><br><br>
+        <label class="lclas">Your Experience<span class="span1">*</span></label><br>
+        <span class="fa fa-star checked fa-lg"></span>
+        <span class="fa fa-star checked fa-lg"></span>
+        <span class="fa fa-star checked fa-lg"></span>
+        <span class="fa fa-star checked fa-lg"></span>
+        <span class="fa fa-star checked fa-lg"></span><br>
+        <label style="font-size: 12px; line-height-step: 10px;">Overall how was your Experience with us?</label><br><br>
+        <label class="lclas">How satisfied are you with<span class="span1">*</span></label><br>
+        <table >
+            <tr>
+            <th> </th>
+            <th>Very Unsatisfied</th>
+            <th>Unsatisfied</th>
+            <th>Neutral</th>
+            <th>Satisfied</th>
+            <th>Very Satisfied</th>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Purchase</th>
+                <th><input type="radio" name="age"></th>
+                <th><input type="radio" name="age"></th>
+                <th><input type="radio" name="age"></th>
+                <th><input type="radio" name="age"></th>
+                <th><input type="radio" name="age"></th>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Service</th>
+                <th><input type="radio" name="age1"></th>
+                <th><input type="radio" name="age1"></th>
+                <th><input type="radio" name="age1"></th>
+                <th><input type="radio" name="age1"></th>
+                <th><input type="radio" name="age1"></th>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Company Overall</th>
+                <th><input type="radio" name="age2"></th>
+                <th><input type="radio" name="age2"></th>
+                <th><input type="radio" name="age2"></th>
+                <th><input type="radio" name="age2"></th>
+                <th><input type="radio" name="age2"></th>
+            </tr>
+        </table><br>
+        <label class="lclas">How likely are to you<span class="span1">*</span></label><br>
+        <table >
+            <tr>
+            <th> </th>
+            <th>Very Unlikely</th>
+            <th>Unlikely</th>
+            <th>Neutral</th>
+            <th>Likely</th>
+            <th>Very Likely</th>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Buy from us again</th>
+                <th><input type="radio" name="age4"></th>
+                <th><input type="radio" name="age4"></th>
+                <th><input type="radio" name="age4"></th>
+                <th><input type="radio" name="age4"></th>
+                <th><input type="radio" name="age4" ></th>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Recommend our products to others</th>
+                <th><input type="radio" name="age5"></th>
+                <th><input type="radio" name="age5"></th>
+                <th><input type="radio" name="age5"></th>
+                <th><input type="radio" name="age5"></th>
+                <th><input type="radio" name="age5"></th>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Recommend our company to others</th>
+                <th><input type="radio" name="age6"></th>
+                <th><input type="radio" name="age6"></th>
+                <th><input type="radio" name="age6"></th>
+                <th><input type="radio" name="age6"></th>
+                <th><input type="radio" name="age6"></th>
+            </tr>
+        </table><br>
+        <label class="lclas">Additional comments or thoughts</label><br>
+        <textarea id="w3review" name="w3review" rows="5" cols="70"></textarea><br>
+        <button onclick="myFunction()">Submit</button>
+    </fieldset>
+    </form>
+</div>
+</body>
+</html>
